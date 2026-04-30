@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: #FFFFFF;
+  --text-color: #111827;
+  --primary-color: #1E88E5;
+  --accent-color: #FF8C42;
+  
+  /* Premium Apple Glass Variables */
+  --glass-bg: rgba(255, 255, 255, 0.65);
+  --glass-border: rgba(255, 255, 255, 0.4);
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+
+  --dark-bg-color: #050505;
+  --dark-text-color: #F9FAFB;
+  --dark-glass-bg: rgba(30, 30, 30, 0.65);
+  --dark-glass-border: rgba(255, 255, 255, 0.08);
+  --dark-glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  /* Fix for Google Translate pushing body down */
+  top: 0 !important;
+}
+
+.dark body {
+  background-color: var(--dark-bg-color);
+  color: var(--dark-text-color);
+}
+
+/* HIDE GOOGLE TRANSLATE BAR */
+.skiptranslate {
+    display: none !important;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+.dark .custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* TRUE LIQUID GLASS APPLE STYLE */
+.liquid-glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+}
+
+.dark .liquid-glass {
+  background: var(--dark-glass-bg);
+  border: 1px solid var(--dark-glass-border);
+  box-shadow: var(--dark-glass-shadow);
+}
+
+.liquid-glass-dark {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+}
+
+.pointer-events-none { pointer-events: none !important; }
+.pointer-events-auto { pointer-events: auto !important; }
+
+#service-modal, #checkout-modal, #success-modal, #promo-modal, #review-modal { z-index: 9999; }
+button, a, .service-card, .sub-service-item { cursor: pointer !important; position: relative; z-index: 50; }
+#cart-btn { z-index: 100; }
+#main-nav { z-index: 70; }
+
+.faq-answer {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease-in-out;
+}
+.faq-answer.open { grid-template-rows: 1fr; }
+
+.text-primary { color: var(--primary-color); }
+.bg-primary { background-color: var(--primary-color); }
+.text-accent { color: var(--accent-color); }
+.bg-accent { background-color: var(--accent-color); }

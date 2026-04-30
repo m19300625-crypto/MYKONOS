@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="el" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A & G LAUNDRY MYKONOS</title>
+     <!-- SEO & Meta Tags (English & Greek) -->
+      <meta name="google-site-verification" content="lfpHzRqEL2BHA-HyLP-gUBxjOsXsOc1ayticzYKhy54" />
+<meta name="description" content="A&G Laundry Mykonos: Premium laundry and dry cleaning in Ano Mera. High-quality washing and ironing. Υπηρεσίες πλυντηρίου και στεγνοκαθαριστηρίου στην Άνω Μερά Μυκόνου." />
+<meta name="keywords" content="laundry Mykonos, dry cleaning Mykonos, Ano Mera laundry, πλυντήρια Μύκονος, στεγνοκαθαριστήρια Μύκονος, Άνω Μερά, wash and fold, pickup delivery Mykonos">
+<meta name="author" content="A & G LAUNDRY MYKONOS">
+
+<!-- Open Graph (Redes Sociais) -->
+<meta property="og:title" content="A & G LAUNDRY MYKONOS | Premium Laundry Services">
+<meta property="og:description" content="High-quality laundry, dry cleaning, and ironing services in Mykonos. Professional results for individuals and businesses.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://aglaundrymykonos.netlify.app">
+
+<!-- JSON-LD: O "Cérebro" do SEO para o Google -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LaundryBusiness",
+  "name": "A & G LAUNDRY MYKONOS",
+  "alternateName": "A&G Laundry and Dry Clean Mykonos",
+  "url": "https://aglaundrymykonos.netlify.app",
+  "logo": "https://aglaundrymykonos.netlify.app",
+  "telephone": "+30 697 175 4067",
+  "priceRange": "$$",
+  "founder": {
+    "@type": "Person",
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Kardamida",
+    "addressLocality": "Ano Mera",
+    "postalCode": "84600",
+    "addressCountry": "GR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "37.4491",
+    "longitude": "25.3957"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "09:00",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday",
+      "opens": "11:00",
+      "closes": "17:00"
+    }
+  ],
+  "description": "High-quality laundry, dry cleaning, and ironing services for individuals and businesses in Mykonos. Σύγχρονος εξοπλισμός και εξειδικευμένο προσωπικό στην Άνω Μερά."
+}
+</script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="public/assets/favicoin/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="public/assets/favicoin/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="public/assets/favicoin/favicon-16x16.png">
+<link rel="manifest" href="public/assets/favicoin/site.webmanifest">
+    
+    <link rel="stylesheet" href="./style.css">
+    
+    <!-- Import Map for bare modules fallback -->
+    <script type="importmap">
+      {
+        "imports": {
+          "lucide": "https://unpkg.com/lucide@latest/dist/esm/lucide.js",
+          "gsap": "https://cdn.skypack.dev/gsap"
+        }
+      }
+    </script>
+
+    <script>
+      // Auto-set theme
+      if (localStorage.theme === 'light' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: light)').matches)) {
+        document.documentElement.classList.add('light');
+      } else {
+        document.documentElement.classList.remove('light');
+      }
+    </script>
+  </head>
+  <body class="font-sans overflow-x-hidden selection:bg-primary selection:text-white transition-colors duration-500">
+    
+    <!-- Google Translate Widget (Hidden) -->
+    <div id="google_translate_element" class="hidden"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'el',
+                includedLanguages: 'el,en',
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+    <script>
+      // Immediate global handler to prevent "is not a function" errors
+      window.switchLang = function(lang) {
+          const select = document.querySelector('.goog-te-combo');
+          if (select) {
+              select.value = lang;
+              select.dispatchEvent(new Event('change'));
+          } else {
+              document.cookie = `googtrans=/el/${lang}; path=/`;
+              window.location.reload();
+          }
+      };
+    </script>
+
+    <!-- Hidden Translations for WhatsApp Message -->
+    <div id="wa-translations" class="hidden">
+        <span id="wa-title">ΕΠΙΣΗΜΗ ΠΑΡΑΓΓΕΛΙΑ</span>
+        <span id="wa-client">Πελάτης:</span>
+        <span id="wa-contact">Επικοινωνία:</span>
+        <span id="wa-details">Λεπτομέρειες Παραγγελίας:</span>
+        <span id="wa-total">Εκτιμώμενο Σύνολο:</span>
+    </div>
+
+    <!-- PREMIUM APPLE-STYLE PILL MENU -->
+    <nav id="main-nav" class="fixed top-12 md:top-16 left-1/2 -translate-x-1/2 z-[70] liquid-glass rounded-full px-5 py-3 flex items-center justify-between gap-4 md:gap-6 transition-all w-max max-w-[95%] shadow-2xl border border-white/40 dark:border-white/10">
+        <!-- Logo -->
+        <a href="#home" class="flex-shrink-0 flex items-center mr-1 md:mr-3">
+            <img src="public/assets/logo/logo.png" alt="A&G Logo" class="h-8 md:h-10 w-auto object-contain drop-shadow-sm">
+        </a>
+        
+        <!-- Icon Links (All Devices) -->
+        <div class="flex items-center space-x-3 md:space-x-5 text-gray-800 dark:text-gray-200">
+            <a href="#home" class="p-1.5 md:p-2 hover:text-primary transition-colors" title="Αρχική"><i data-lucide="home" class="w-5 h-5"></i></a>
+            <a href="#about" class="p-1.5 md:p-2 hover:text-primary transition-colors" title="Σχετικά με εμάς"><i data-lucide="info" class="w-5 h-5"></i></a>
+            <a href="#services" class="p-1.5 md:p-2 hover:text-primary transition-colors" title="Τιμοκατάλογος"><i data-lucide="list" class="w-5 h-5"></i></a>
+            <a href="#reviews" class="p-1.5 md:p-2 hover:text-primary transition-colors" title="Κριτικές"><i data-lucide="star" class="w-5 h-5"></i></a>
+            <a href="#contact" class="p-1.5 md:p-2 hover:text-primary transition-colors" title="Επικοινωνία"><i data-lucide="phone" class="w-5 h-5"></i></a>
+        </div>
+
+        <div class="w-px h-5 bg-gray-300 dark:bg-gray-700 ml-1 md:ml-2"></div>
+
+        <!-- Actions (Flags & Theme) -->
+        <div class="flex items-center gap-3 md:gap-4 ml-1 md:ml-2">
+            <div class="flex items-center gap-2">
+                <button onclick="window.switchLang('el')" class="text-lg md:text-xl hover:scale-110 transition-transform" title="Ελληνικά">🇬🇷</button>
+                <button onclick="window.switchLang('en')" class="text-lg md:text-xl hover:scale-110 transition-transform" title="English">🇬🇧</button>
+            </div>
+            <button id="theme-toggle" class="text-gray-800 dark:text-gray-200 hover:text-primary transition-colors flex items-center justify-center p-1">
+                <i data-lucide="moon" class="w-5 h-5 dark:hidden"></i>
+                <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="relative min-h-[100dvh] w-full flex items-center justify-center z-0 overflow-hidden p-4 md:p-6 pt-24">
+      <div class="absolute inset-4 md:inset-6 z-0 rounded-[3rem] overflow-hidden bg-black shadow-2xl">
+          <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover opacity-60">
+              <source src="public/assets/background/bk.mp4" type="video/mp4">
+          </video>
+          <div class="absolute inset-0 bg-black/30"></div>
+      </div>
+
+      <div class="relative z-20 text-center px-4 max-w-4xl mx-auto flex flex-col items-center pointer-events-auto">
+        <div class="liquid-glass-dark p-8 md:p-16 rounded-[3rem] mb-8 w-full backdrop-blur-md border border-white/10">
+            <h1 class="font-bold text-4xl md:text-7xl tracking-tight mb-4 text-white notranslate" translate="no">
+                A & G LAUNDRY
+            </h1>
+            <h2 class="text-xl md:text-3xl font-light tracking-wide mb-4 text-gray-200 notranslate" translate="no">DRY CLEANING MYKONOS</h2>
+            <p class="text-gray-300 text-sm md:text-lg max-w-2xl mx-auto font-light">Premium υπηρεσίες πλυντηρίου και στεγνοκαθαριστηρίου στη Μύκονο.</p>
+        </div>
+        
+        <div class="flex flex-row justify-center gap-3 w-full max-w-sm mx-auto">
+          <a href="#services" class="flex-1 py-3.5 px-2 bg-primary text-white rounded-full text-[11px] md:text-xs font-bold uppercase tracking-widest hover:opacity-90 transition-all shadow-lg flex items-center justify-center gap-1.5">
+            <span>Δείτε τις Τιμές</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+          </a>
+          <a href="#contact" class="flex-1 py-3.5 px-2 bg-white/10 text-white backdrop-blur-md border border-white/20 rounded-full text-[11px] md:text-xs font-bold uppercase tracking-widest hover:bg-white/20 transition-all shadow-lg flex items-center justify-center">
+            <span>Επικοινωνία</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="relative z-30 py-24 px-6">
+      <div class="max-w-5xl mx-auto liquid-glass rounded-[3rem] p-8 md:p-16">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-primary">Η καθαριότητα είναι προτεραιότητά μας.</h2>
+                <div class="text-gray-600 dark:text-gray-300 space-y-4 font-light leading-relaxed">
+                    <p>Στην A & G Laundry, προσφέρουμε υπηρεσίες υψηλών προδιαγραφών για ιδιώτες και τουρίστες στη Μύκονο.</p>
+                    <p>Χρησιμοποιούμε σύγχρονο εξοπλισμό και οικολογικά προϊόντα για να διασφαλίσουμε ότι τα ρούχα σας είναι πάντα φρέσκα και καθαρά.</p>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <div class="w-64 h-64 rounded-[3rem] liquid-glass flex items-center justify-center shadow-xl overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?q=80&w=800&auto=format&fit=crop" alt="Laundry" class="w-full h-full object-cover opacity-90">
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICE LIST (SERVICES) -->
+    <section id="services" class="relative z-30 py-24 overflow-hidden">
+      <div class="px-6 mb-8 max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-end gap-6">
+        <div>
+          <h2 class="text-4xl font-bold mb-4 text-primary">Τιμοκατάλογος</h2>
+          <p class="text-gray-500 dark:text-gray-400 max-w-md font-light">
+            Επιλέξτε μια κατηγορία για να δείτε τις τιμές και να κάνετε την παραγγελία σας.
+          </p>
+        </div>
+        <div class="flex space-x-3 pointer-events-auto">
+          <button id="scroll-left" class="p-4 liquid-glass rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-all"><i data-lucide="arrow-left" class="w-5 h-5"></i></button>
+          <button id="scroll-right" class="p-4 liquid-glass rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-all"><i data-lucide="arrow-right" class="w-5 h-5"></i></button>
+        </div>
+      </div>
+
+      <!-- Important Notice -->
+      <div class="max-w-6xl mx-auto px-6 mb-10">
+          <div class="liquid-glass p-5 rounded-2xl border-l-4 border-accent">
+              <p class="text-xs md:text-sm text-gray-600 dark:text-gray-300 font-medium flex items-start gap-3 leading-relaxed">
+                  <i data-lucide="alert-circle" class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"></i>
+                  <span>Σημαντικό: Στις Τιμές δεν περιλαμβάνεται 24% ΦΠΑ. Η τιμή ενδέχεται να διαφέρει ανάλογα με τον τύπο η το μέγεθος. Σε περιπτώσεις ιδιαίτερων λεκέδων, η τιμή μπορεί διαφοροποιηθεί ανάλογα με τις ανάγκες καθαρισμού. Για λόγοyς υγιεινής πραγματοποιούνται πάντα μεμονωμένοι κύκλοι πλύσης.</span>
+              </p>
+          </div>
+      </div>
+
+      <!-- Carousel -->
+      <div class="w-full overflow-x-auto no-scrollbar pb-16 px-6 md:px-12 snap-x snap-mandatory scroll-smooth relative z-30" id="services-carousel">
+        <div class="flex space-x-6 md:space-x-8 w-max" id="services-track">
+          <!-- Cards injected via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS (GOOGLE MAPS INTEGRATION) -->
+    <section id="reviews" class="relative z-30 py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                <div>
+                    <h2 class="text-4xl font-bold text-primary mb-2">Τι λένε οι πελάτες μας</h2>
+                    <div class="flex items-center gap-2 text-sm text-gray-500 font-medium">
+                        <span>Αξιολογήσεις από το</span>
+                        <span class="font-bold text-gray-800 dark:text-gray-200">Google</span>
+                        <i data-lucide="check-circle" class="w-4 h-4 text-blue-500"></i>
+                    </div>
+                </div>
+                <!-- Google Review Button -->
+                <a href="https://www.google.com/search?sca_esv=ef29f624651829e3&sxsrf=ANbL-n42ZEI_xoPfdUcGftCLGUkUNXHNvQ:1777473247973&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOblVX7lwrfX4dURv7xnzskEpn9sNkn3cX4jihpbZjuQqn61bFZueobLiMl03SNcjjAulx_dAolfSiC4ocj6updb4Vjr7cplOsWf0-w7AoN3TujSMlcBYSGZrXW_AcaFV_W0594k%3D&q=A%26G+Laundry+and+Dry+Clean+Mykonos+Cr%C3%ADticas&sa=X&ved=2ahUKEwiZ-Kvso5OUAxW7TEEAHel2L2YQ0bkNegQIIxAF&biw=1707&bih=848&dpr=0.8#" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="inline-block bg-[#4285F4] hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                    Αξιολογήστε μας στο Google
+                </a>
+            </div>
+            <div id="reviews-container" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="relative z-30 py-24 px-6">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-center text-primary">Συχνές Ερωτήσεις</h2>
+            <div class="space-y-4" id="faq-container">
+                <div class="faq-item liquid-glass rounded-[2rem] overflow-hidden transition-all">
+                    <button class="faq-button w-full flex justify-between items-center font-medium p-6 text-left">
+                        <span class="text-lg">Προσφέρετε παράδοση;</span>
+                        <span class="faq-icon transition-transform duration-300 bg-black/5 dark:bg-white/10 p-2 rounded-full"><i data-lucide="chevron-down" class="w-5 h-5"></i></span>
+                    </button>
+                    <div class="faq-answer"><div class="overflow-hidden"><div class="px-6 pb-6 text-gray-500 font-light">Ναι, προσφέρουμε υπηρεσίες παραλαβής και παράδοσης σε όλη τη Μύκονο. Επικοινωνήστε μαζί μας για να προγραμματίσετε.</div></div></div>
+                </div>
+                <div class="faq-item liquid-glass rounded-[2rem] overflow-hidden transition-all">
+                    <button class="faq-button w-full flex justify-between items-center font-medium p-6 text-left">
+                        <span class="text-lg">Πόσος χρόνος χρειάζεται για τον καθαρισμό;</span>
+                        <span class="faq-icon transition-transform duration-300 bg-black/5 dark:bg-white/10 p-2 rounded-full"><i data-lucide="chevron-down" class="w-5 h-5"></i></span>
+                    </button>
+                    <div class="faq-answer"><div class="overflow-hidden"><div class="px-6 pb-6 text-gray-500 font-light">Ο τυπικός χρόνος παράδοσης είναι 24-48 ώρες. Υπηρεσίες express είναι διαθέσιμες κατόπιν αιτήματος.</div></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & MAP -->
+    <section id="contact" class="relative z-30 py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4 text-primary">Βρείτε μας</h2>
+                <p class="text-gray-500 font-light">Είμαστε εδώ για να σας εξυπηρετήσουμε.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="liquid-glass p-10 rounded-[3rem] space-y-8">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary"><i data-lucide="phone" class="w-6 h-6"></i></div>
+                        <div>
+                            <p class="font-bold text-lg">+30 697 175 4067</p>
+                            <p class="font-bold text-lg">+30 697 716 7867</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary"><i data-lucide="mail" class="w-6 h-6"></i></div>
+                        <p class="font-bold text-lg">angmykonos@gmail.com</p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary"><i data-lucide="map-pin" class="w-6 h-6"></i></div>
+                        <p class="font-bold text-lg">Καρδαμίδα – Άνω Μερά, Μύκονος</p>
+                    </div>
+                    
+                    <div class="pt-6 border-t border-gray-200 dark:border-gray-800 flex gap-4">
+                        <a href="https://www.instagram.com/ang.laundry.mykonos/" target="_blank" class="w-14 h-14 liquid-glass rounded-full flex items-center justify-center hover:text-primary hover:scale-110 transition-all">
+                            <i data-lucide="instagram" class="w-6 h-6"></i>
+                        </a>
+                        <a href="mailto:angmykonos@gmail.com" class="w-14 h-14 liquid-glass rounded-full flex items-center justify-center hover:text-primary hover:scale-110 transition-all">
+                            <i data-lucide="mail" class="w-6 h-6"></i>
+                        </a>
+                    </div>
+
+                    <!-- Share Location Button -->
+                    <button onclick="window.shareLocation()" class="mt-4 w-full py-4 liquid-glass rounded-full text-xs font-bold uppercase tracking-widest hover:bg-black/5 transition-all flex items-center justify-center gap-2 text-primary border border-primary/20 shadow-sm">
+                        <i data-lucide="share-2" class="w-5 h-5"></i> <span>Μοιραστείτε την Τοποθεσία</span>
+                    </button>
+                </div>
+
+                <div class="w-full h-[400px] liquid-glass rounded-[3rem] p-2 overflow-hidden">
+                    <iframe src="https://maps.google.com/maps?q=Ano%20Mera,%20Mykonos&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0; border-radius: 2.5rem;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="relative z-30 py-12 text-center border-t border-gray-200 dark:border-gray-800 flex flex-col items-center gap-6">
+        <div class="max-w-md px-6 flex flex-col items-center">
+            <img src="public/assets/logo/logo.png" alt="A&G Laundry Mykonos" class="h-16 md:h-20 w-auto object-contain mb-4">
+        </div>
+        <div class="w-full mt-2 pt-6 flex flex-col items-center gap-4">
+            <p class="text-gray-400 text-xs uppercase tracking-widest notranslate" translate="no">&copy; 2026 A & G LAUNDRY. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- MODALS -->
+
+    <!-- Service Modal -->
+    <div id="service-modal" class="fixed inset-0 hidden flex items-center justify-center p-4 z-[9999]">
+      <div class="absolute inset-0 bg-black/40 backdrop-blur-sm transition-opacity duration-300 opacity-0" id="service-modal-backdrop"></div>
+      <div class="relative liquid-glass w-full max-w-2xl max-h-[85vh] rounded-[3rem] overflow-hidden flex flex-col transform scale-95 opacity-0 transition-all duration-300 pointer-events-auto" id="service-modal-content">
+        <div class="p-6 md:p-8 pb-4 flex justify-between items-start border-b border-gray-200/20 dark:border-gray-700/20">
+          <div>
+            <h3 id="modal-service-title" class="text-2xl font-bold text-primary">Title</h3>
+          </div>
+          <button id="close-service-modal" class="p-2 bg-black/5 dark:bg-white/10 rounded-full hover:bg-black/10 transition-colors"><i data-lucide="x" class="w-5 h-5"></i></button>
+        </div>
+        <div class="overflow-y-auto p-4 md:p-6 space-y-3 custom-scrollbar">
+            <div id="modal-service-list" class="grid gap-3"></div>
+        </div>
+        <div class="p-6 border-t border-gray-200/20 dark:border-gray-700/20 flex justify-end">
+          <button id="finish-selection-btn" class="px-8 py-4 bg-primary text-white rounded-full text-xs font-bold uppercase tracking-widest hover:opacity-90 transition-all shadow-lg">Κλείσιμο</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Checkout Modal (WhatsApp) -->
+    <div id="checkout-modal" class="fixed inset-0 hidden flex items-center justify-center p-4 z-[9999]">
+        <div class="absolute inset-0 bg-black/40 backdrop-blur-sm transition-opacity duration-300 opacity-0" id="checkout-modal-backdrop"></div>
+        <div class="relative liquid-glass w-full max-w-lg rounded-[3rem] overflow-hidden flex flex-col transform scale-95 opacity-0 transition-all duration-300 pointer-events-auto" id="checkout-modal-content">
+            <div class="p-8 pb-4 flex justify-between items-center border-b border-gray-200/20">
+                <h3 class="text-2xl font-bold text-primary">Λεπτομέρειες Παραγγελίας</h3>
+                <button id="close-checkout-modal" class="p-2 bg-black/5 rounded-full"><i data-lucide="x" class="w-5 h-5"></i></button>
+            </div>
+            <div class="p-8 pt-6 overflow-y-auto custom-scrollbar">
+                <p class="text-sm text-gray-500 mb-6 font-light">Παρακαλούμε συμπληρώστε τα στοιχεία σας.</p>
+                <form id="checkout-form" class="space-y-4">
+                    <div class="relative">
+                        <input type="text" name="client_name" id="c_nome" placeholder="Ονοματεπώνυμο" required class="block w-full liquid-glass rounded-2xl px-5 py-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary">
+                    </div>
+                    <div class="relative">
+                        <input type="text" name="client_contact" id="c_contato" placeholder="Τηλέφωνο / Email" required class="block w-full liquid-glass rounded-2xl px-5 py-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary">
+                    </div>
+                    
+                    <div class="liquid-glass p-5 rounded-2xl mt-6">
+                        <div id="checkout-summary" class="text-sm font-medium space-y-2"></div>
+                    </div>
+                    
+                    <button type="submit" class="w-full py-4 mt-6 bg-[#25D366] text-white rounded-full text-xs font-bold uppercase tracking-widest hover:opacity-90 transition-all shadow-lg flex justify-center items-center gap-2">
+                        <i data-lucide="message-circle" class="w-4 h-4"></i> <span>Αποστολή μέσω WhatsApp</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Promo Modal -->
+    <div id="promo-modal" class="fixed inset-0 hidden flex items-center justify-center p-4 z-[9999]">
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-md transition-opacity duration-300 opacity-0" id="promo-modal-backdrop"></div>
+        <div class="relative bg-accent text-white w-full max-w-sm rounded-[3rem] overflow-hidden flex flex-col items-center text-center p-10 transform scale-95 opacity-0 transition-all duration-300 shadow-2xl" id="promo-modal-content">
+            <button onclick="window.closePromoModal()" class="absolute top-4 right-4 p-2 bg-black/20 rounded-full hover:bg-black/40 transition-colors"><i data-lucide="x" class="w-5 h-5"></i></button>
+            <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mb-6"><i data-lucide="tag" class="w-10 h-10"></i></div>
+            <h3 class="text-3xl font-bold mb-2" id="promo-title-display">Ειδική Προσφορά!</h3>
+            <p class="text-white/90 text-lg mb-8 font-light" id="promo-message">Έκπτωση 20%.</p>
+            <button onclick="window.closePromoModal()" class="w-full py-4 bg-white text-accent rounded-full text-xs font-bold uppercase tracking-widest hover:opacity-90 transition-all shadow-lg">Αποδοχή Προσφοράς</button>
+        </div>
+    </div>
+
+    <!-- CART BUTTON -->
+    <div id="cart-btn" class="fixed bottom-6 right-6 z-[100] cursor-pointer pointer-events-auto" style="opacity: 0; visibility: hidden; transform: translateY(100px);">
+      <button class="bg-primary text-white pl-6 pr-8 py-4 rounded-full shadow-2xl flex items-center space-x-4 hover:scale-105 transition-transform">
+        <div class="relative flex items-center justify-center">
+          <i data-lucide="shopping-bag" class="w-6 h-6"></i>
+          <span id="cart-count" class="absolute -top-2 -right-2 bg-accent text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center border-2 border-primary">0</span>
+        </div>
+        <span class="font-bold text-xs uppercase tracking-widest">Ολοκλήρωση</span>
+      </button>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+  
+
+<script id="dualite-canvas-overlay-v1">
+
+(function() {
+  if (window.__canvasOverlayInit) return;
+  window.__canvasOverlayInit = true;
+
+  try {
+
+  var enabled = false;
+  let hoveredEl = null;
+  let selectedEl = null;
+
+  function getSelector(el) {
+    if (el.id) return '#' + el.id;
+    let path = [];
+    while (el && el !== document.body && el !== document.documentElement) {
+      let tag = el.tagName.toLowerCase();
+      let sibling = el;
+      let nth = 1;
+      while (sibling.previousElementSibling) {
+        sibling = sibling.previousElementSibling;
+        if (sibling.tagName === el.tagName) nth++;
+      }
+      path.unshift(nth > 1 ? tag + ':nth-of-type(' + nth + ')' : tag);
+      el = el.parentElement;
+    }
+    return path.join(' > ');
+  }
+
+  function getRect(el) {
+    const r = el.getBoundingClientRect();
+    return { top: r.top, left: r.left, width: r.width, height: r.height };
+  }
+
+  function getComputedProps(el) {
+    var cs = window.getComputedStyle(el);
+    return {
+      tagName: el.tagName.toLowerCase(),
+      id: el.id || '',
+      className: (typeof el.className === 'string') ? el.className : '',
+      textContent: (el.childNodes.length === 1 && el.childNodes[0].nodeType === 3) ? (el.textContent || '').slice(0, 80) : '',
+      fontSize: cs.fontSize,
+      fontWeight: cs.fontWeight,
+      fontFamily: cs.fontFamily,
+      color: cs.color,
+      backgroundColor: cs.backgroundColor,
+      opacity: cs.opacity,
+      textAlign: cs.textAlign,
+      padding: cs.padding,
+      margin: cs.margin,
+      borderRadius: cs.borderRadius,
+      borderWidth: cs.borderWidth,
+      borderColor: cs.borderColor,
+      width: cs.width,
+      height: cs.height,
+      display: cs.display,
+    };
+  }
+
+  function parseDataDs(ds) {
+    var parts = ds.split(':');
+    if (parts.length < 3) return null;
+    var col = parseInt(parts[parts.length - 1], 10);
+    var line = parseInt(parts[parts.length - 2], 10);
+    var filePath = parts.slice(0, parts.length - 2).join(':');
+    if (!filePath || isNaN(line)) return null;
+    return { sourceFilePath: filePath, sourceLine: line, sourceColumn: isNaN(col) ? null : col };
+  }
+
+  function getDebugSource(el) {
+    var node = el;
+    while (node && node !== document.documentElement) {
+      if (node.getAttribute) {
+        var ds = node.getAttribute('data-ds');
+        if (ds) {
+          var parsed = parseDataDs(ds);
+          if (parsed) return parsed;
+        }
+      }
+      node = node.parentElement;
+    }
+
+    var workDir = '/home/project/';
+    function strip(f) {
+      if (!f) return '';
+      return f.startsWith(workDir) ? f.slice(workDir.length) : f;
+    }
+
+    try {
+      var vNode = el;
+      while (vNode && vNode !== document.documentElement) {
+        var vc = vNode.__vueParentComponent;
+        if (vc && vc.type && vc.type.__file) {
+          return { sourceFilePath: strip(vc.type.__file), sourceLine: null, sourceColumn: null };
+        }
+        vNode = vNode.parentElement;
+      }
+    } catch (err) {
+      console.warn('[canvas-overlay] Vue fallback error:', err);
+    }
+
+    return null;
+  }
+
+  function clearOverlayState() {
+    hoveredEl = null;
+    selectedEl = null;
+    window.parent.postMessage({ type: 'canvas-hover-clear' }, '*');
+  }
+
+  document.addEventListener('mousemove', function(e) {
+    if (!enabled) return;
+    const el = document.elementFromPoint(e.clientX, e.clientY);
+    if (!el || el === hoveredEl) return;
+    hoveredEl = el;
+    window.parent.postMessage({
+      type: 'canvas-hover',
+      rect: getRect(el),
+      selector: getSelector(el),
+    }, '*');
+  }, true);
+
+  document.addEventListener('click', function(e) {
+    if (!enabled) return;
+    e.preventDefault();
+    e.stopPropagation();
+    const el = document.elementFromPoint(e.clientX, e.clientY);
+    if (!el) return;
+    selectedEl = el;
+    var source = getDebugSource(el);
+    window.parent.postMessage({
+      type: 'canvas-select',
+      rect: getRect(el),
+      selector: getSelector(el),
+      props: getComputedProps(el),
+      source: source,
+    }, '*');
+  }, true);
+
+  var syncSelectRaf = 0;
+  function postSelectedRectIfAny() {
+    if (!selectedEl) return;
+    if (!selectedEl.isConnected) {
+      selectedEl = null;
+      return;
+    }
+    window.parent.postMessage({
+      type: 'canvas-select-rect',
+      rect: getRect(selectedEl),
+    }, '*');
+  }
+  function scheduleSelectedRectSync() {
+    if (!enabled) return;
+    if (!selectedEl) return;
+    if (syncSelectRaf) return;
+    syncSelectRaf = requestAnimationFrame(function() {
+      syncSelectRaf = 0;
+      postSelectedRectIfAny();
+    });
+  }
+  window.addEventListener('scroll', scheduleSelectedRectSync, true);
+  window.addEventListener('resize', scheduleSelectedRectSync);
+
+  document.addEventListener('mouseleave', function() {
+    if (!enabled) return;
+    hoveredEl = null;
+    window.parent.postMessage({ type: 'canvas-hover-clear' }, '*');
+  });
+
+  window.addEventListener('message', function(e) {
+    if (e.source !== window.parent) return;
+    if (!e.data) return;
+    if (e.data.type === 'canvas-enable') {
+      enabled = true;
+    } else if (e.data.type === 'canvas-disable') {
+      enabled = false;
+      clearOverlayState();
+    } else if (e.data.type === 'canvas-deselect') {
+      selectedEl = null;
+    }
+  });
+
+  window.parent.postMessage({ type: 'canvas-overlay-ready' }, '*');
+
+  } catch (err) {
+    window.parent.postMessage({ type: 'canvas-overlay-error', message: String(err) }, '*');
+  }
+})();
+
+</script>
+</body>
+</html>
